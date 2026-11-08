@@ -61,8 +61,9 @@ fun MainScreen() {
 }
 
 /* =====================================================================
-   功能一：R型中繼器 DIP 開關撥碼換算（8-Pin / 10-Pin 二進位）
+   功能一：R型中繼器 DIP 開關撥碼換算
    ===================================================================== */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DipCalculatorScreen() {
     var inputAddress by remember { mutableStateOf("1") }
@@ -228,8 +229,9 @@ fun PinItem(pinNumber: Int, isOn: Boolean, weight: Int, isOnAtBottom: Boolean, o
 }
 
 /* =====================================================================
-   功能二：良豪 / 宏力 HEX 16 進制雙旋鈕對照頁面 (SW1高位 / SW2低位)
+   功能二：良豪 / 宏力 HEX 16 進制雙旋鈕對照頁面
    ===================================================================== */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HexKnobScreen() {
     var mode by remember { mutableIntStateOf(0) }
