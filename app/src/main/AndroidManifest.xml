@@ -4,7 +4,7 @@
         android:allowBackup="true"
         android:label="R型撥碼計算器"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.Material.Light.NoTitleBar">
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
         <activity
             android:name=".MainActivity"
             android:exported="true">
