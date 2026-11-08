@@ -61,7 +61,7 @@ fun MainScreen() {
 }
 
 /* =====================================================================
-   功能一：R型中繼器 DIP 開關撥碼換算
+   功能一：R型中繼器 DIP 開關撥碼換算（8-Pin / 10-Pin 二進位）
    ===================================================================== */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -229,7 +229,7 @@ fun PinItem(pinNumber: Int, isOn: Boolean, weight: Int, isOnAtBottom: Boolean, o
 }
 
 /* =====================================================================
-   功能二：良豪 / 宏力 HEX 16 進制雙旋鈕對照頁面
+   功能二：良豪 / 宏力 HEX 16 進制雙旋鈕對照頁面 (SW1高位 / SW2低位)
    ===================================================================== */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -275,7 +275,7 @@ fun HexKnobScreen() {
             .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("良豪 / 宏力 HEX 雙旋鈕對照", fontSize = 18.sp, FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
+        Text("良豪 / 宏力 HEX 雙旋鈕對照", fontSize = 18.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
         Text("對應 16 進制 0~F 雙旋鈕刻度 (SW1 高位 / SW2 低位)", fontSize = 11.sp, color = Color.Gray, modifier = Modifier.padding(bottom = 8.dp))
 
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
