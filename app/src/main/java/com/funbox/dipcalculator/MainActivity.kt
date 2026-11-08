@@ -1,5 +1,3 @@
-@file:OptIn(ExperimentalMaterial3Api::class)
-
 package com.funbox.dipcalculator
 
 import android.os.Bundle
